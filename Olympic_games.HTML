@@ -12,7 +12,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('TrackField_Rules.WEBP'); /* Add the path to background image */
+            background-image: url('Olympics_backgroud.jpg'); /* Add the path to the background image */
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -26,6 +26,14 @@
         h1 {
             margin: 0;
             color: white; /* Change the title color to white */
+        }
+
+        /* Style for h2 elements */
+        h2 {
+            background-color: lightskyblue;
+            color: white;
+            padding: 5px 10px;
+            margin-top: 20px;
         }
         main {
             max-width: 800px;
@@ -58,14 +66,14 @@
     </header>
     <main>
         <h2>About the Olympics</h2>
-        <p>Originating in 1896 and being one of the most prestigious all-round sporting events, the Olympic is one of the most watched events throughout the world. The summer Olympics, synonymously called the Olympics due its dominance in popularity over the winter Olympics, contains 206 nations, containing a National Olympic Committee. Being held every 4 years and achieving an estimated audience of over 3 billion people for the previous Olympics in Tokyo, there are scarcely any achievements which can compare to winning a gold medal within the Olympics.  </p>
+        <p>Originating in <span style="font-weight: bold;">1896</span> and being one of the most prestigious all-round sporting events, the <strong>Olympics</strong> is one of the most watched events throughout the world. The summer <strong>Olympics</strong>, synonymously called the <strong>Olympics</strong> due to its dominance in popularity over the winter <strong>Olympics</strong>, contains <span style=" font-weight: bold;">206 nations</span>, containing a National <strong>Olympic</strong> Committee. Being held <span style=" font-weight: bold;">every 4 years</span> and achieving an estimated audience of over <span style=" font-weight: bold;">3 billion people</span> for the previous <strong>Olympics</strong> in Tokyo, there are scarcely any achievements which can compare to winning a gold medal within the <strong>Olympics</strong>.  </p>
 
         <h2>Olympic Locations</h2>
         <!-- Container for the first graph -->
         <div id="graph-container1"></div>
-        <p>The above map displays the locations of every city which hosted a Summer Olympic Games. The circles on the map act as a marker for the cities in which the Olympics were held. The colour of the marker represents the continent of the city with the size demonstrating the number of times the games has been hosted between 1896-2024, inclusive. Note, that throughout these years the Olympic games for 1916, 1940 and 1944 were cancelled due to World Wars, hence these years are not included. Hovering over the circles will display the name of each city as well as the most recent year in which that city hosted an Olympic Games.</p>
-        <p>The first modern Olympic Games was held in <span style="color: red; font-weight: bold;">Athens</span>, Greece due to the original Olympic Games originating from Greece in 776BC. Following the return of the modern Olympics, <span style="color: red; font-weight: bold;">Paris</span>, <span style="color: lightblue; font-weight: bold;">Los Angeles</span> and <span style="color: red; font-weight: bold;">London</span> all have the highest number of Olympic Games held, with each city hosting 3 times.</p>
-        <p>Therefore, <span style="color: red; font-weight: bold;">Europe</span> has hosted the most Olympic Games out of all the continents, hosting a sum of 15 summer Olympics. Contrastingly, Africa has yet to host an Olympic games as is the only habitable continent which has not had a summer Olympics, with the second least being held in <span style="color: green; font-weight: bold;">South America</span>, which has only hosted 1 summer Olympics.</p>
+        <p>The above map displays the locations of every city which hosted a Summer <strong>Olympic</strong> Games. The circles on the map act as a marker for the cities in which the <strong>Olympics</strong> were held. The colour of the marker represents the continent of the city with the size demonstrating the number of times the games has been hosted between 1896-2024, inclusive. Note, that throughout these years the <strong>Olympic</strong> games for 1916, 1940 and 1944 were cancelled due to World Wars, hence these years are not included. Hovering over the circles will display the name of each city as well as the most recent year in which that city hosted an <strong>Olympic</strong> Games.</p>
+        <p>The first modern <strong>Olympic</strong> Games was held in <span style="color: red; font-weight: bold;">Athens</span>, Greece due to the original <strong>Olympic</strong> Games originating from Greece in 776BC. Following the return of the modern <strong>Olympics</strong>, <span style="color: red; font-weight: bold;">Paris</span>, <span style="color: lightblue; font-weight: bold;">Los Angeles</span> and <span style="color: red; font-weight: bold;">London</span> all have the highest number of <strong>Olympic</strong> Games held, with each city hosting 3 times.</p>
+        <p>Therefore, <span style="color: red; font-weight: bold;">Europe</span> has hosted the most <strong>Olympic</strong> Games out of all the continents, hosting a sum of 15 summer <strong>Olympics</strong>. Contrastingly, Africa has yet to host an <strong>Olympic</strong> games as is the only habitable continent which has not had a summer <strong>Olympics</strong>, with the second least being held in <span style="color: green; font-weight: bold;">South America</span>, which has only hosted 1 summer <strong>Olympics</strong>.</p>
         
         <h2>National Pride</h2>
         <div class="two-column">
@@ -76,48 +84,49 @@
             </div>
             <!-- Text content for the first column (move it to the right) -->
             <div class="column">
-                <p>In order for a country to compete in the Olympics as a 'nation,' they must have a National Olympic Committee. <span style="font-weight: bold;">With 206 recognized nations participating in the Olympic Games, there are more nations competing within the Olympics than there are recognized nations in the world (195)</span>.</p>
-                <p>With athletes wearing national garments, singing national anthems, and competing within national teams for certain events, the Olympics is very much a competition between nations where athletes represent the pride and skill of their country.</p>
-                <p>On the left, the stacked bar chart visualizes the top 15 nations in regard to combined medals achieved. This bar chart stacked the bronze, gold and silver medals in that order and ranks the countries by their total accumulative medals. Currently <span style="color: lightblue; font-weight: bold;">USA</span> contains the most total medals by a significant margin. In fact, the gold medals of <span style="color: blue; font-weight: bold;">Soviet Union</span> alone are larger than the combined medals earned by the second highest nation, <span style="color: red; font-weight: bold;">Britain</span>. Hovering over the bars will clarify the number of gold, silver, and bronze medals won by each country.</p>
-                <p>Below this stacked bar chart is a vertical bar chart with the number of participation of these same 15 countries in the Olympics. Note that despite being the 2nd largest medal winners, the <span style="color: lightblue; font-weight: bold;">USA</span> has notably less participation than other top medal winners such as <span style="color: blue; font-weight: bold;">Soviet Union</span> and <span style="color: red; font-weight: bold;">Britain</span>. However, due to the monumental difference in achieved medals, the <span style="color: lightblue; font-weight: bold;">USA</span> still dominates the number of medals won per participation at the summer Olympics.</p>            </div>
-        </div>
-
-        <h2>Personal Victory</h2>
-        <div class="two-column">
-            <!-- Text content for the first column (text first, graph second) -->
-            <div class="column">
-                <p>The Olympics can be regarded as the pinnacle of international competition. While making it into the Olympics alone is an amazing feat, wining an event will regard you as the greatest athlete within that category. A gold medal, made primarily of silver with a gold coating, can be evaluated to cost anywhere between $20000-$50000. </p>
-                <p>The graph on the left displays the top 40 athletes, all having over 10 combined summer Olympic medals. The scatterplot displays the total combined medals of the athlete as well as the number of Olympics attended by the athlete. Males are displayed in a blue circle while female in a red/pink circle. Hovering over each datapoint displays the breakdown of the number of medals won as well as the athlete’s name.</p>
-                <p>Due to the separation of men and women categories within the Olympics the distribution by each gender is roughly even. An outlier of this is the highest gold medal winner, Michael Phelps. Competing in swimming and winning a total of 23 gold medals, he has over twice as many golds as any other athlete and holds numerous world records which can be found <a href="https://swimswam.com/where-the-name-michael-phelps-still-appears-in-the-record-books/" target="_blank">here</a>.</p>
+                <p>In order for a country to compete in the Olympics as a 'nation,' they must have a National Olympic Committee. <span style="font-weight: bold;">With <strong>206 recognized nations</strong> participating in the <strong>Olympic</strong> Games, there are more nations competing within the <strong>Olympics</strong> than there are recognized nations in the world (195).</span></p>
+                <p>With athletes wearing national garments, singing national anthems, and competing within national teams for certain events, the <strong>Olympics</strong> is very much a competition between nations where athletes represent the pride and skill of their country.</p>
+                <p>On the left, the stacked bar chart visualizes the top 15 nations in regard to combined medals achieved. This bar chart stacked the bronze, gold and silver medals in that order and ranks the countries by their total accumulative medals. Currently <span style="color: lightblue; font-weight: bold;">
+                <p>Below this stacked bar chart is a vertical bar chart with the number of participation of these same 15 countries in the <strong>Olympics</strong>. Note that despite being the 2nd largest medal winners, the <span style="color: lightblue; font-weight: bold;">USA</span> has notably less participation than other top medal winners such as <span style="color: blue; font-weight: bold;">Soviet Union</span> and <span style="color: red; font-weight: bold;">Britain</span>. However, due to the monumental difference in achieved medals, the <span style="color: lightblue; font-weight: bold;">USA</span> still dominates the number of medals won per participation at the summer <strong>Olympics</strong>.</p>
+                </div>
             </div>
-            <!-- Container for the third graph (graph second) -->
-            <div class="column">
-                <div id="graph-container3"></div>
+    
+            <h2>Personal Victory</h2>
+            <div class="two-column">
+                <!-- Text content for the first column (text first, graph second) -->
+                <div class="column">
+                    <p>The <strong>Olympics</strong> can be regarded as the pinnacle of international competition. While making it into the <strong>Olympics</strong> alone is an amazing feat, winning an event will regard you as the greatest athlete within that category. A gold medal, made primarily of silver with a gold coating, can be evaluated to cost anywhere between <span style="font-weight: bold;"></span>$20000-$50000.</span> </p>
+                    <p>The graph on the left displays the top 40 athletes, all having over 10 combined summer <strong>Olympic</strong> medals. The scatterplot displays the total combined medals of the athlete as well as the number of <strong>Olympics</strong> attended by the athlete. <span style="color: blue; font-weight: bold;">Males</span> are displayed in a blue circle while <span style="color: palevioletred; font-weight: bold;">female</span> in a red/pink circle. Hovering over each data point displays the breakdown of the number of medals won as well as the athlete’s name.</p>
+                    <p>Due to the separation of men and women categories within the <strong>Olympics</strong> the distribution by each gender is roughly even. An outlier of this is the highest gold medal winner, Michael Phelps. Competing in swimming and winning a total of 23 gold medals, he has over twice as many golds as any other athlete and holds numerous world records which can be found <a href="https://swimswam.com/where-the-name-michael-phelps-still-appears-in-the-record-books/" target="_blank">here</a>.</p>
+                </div>
+                <!-- Container for the third graph (graph second) -->
+                <div class="column">
+                    <div id="graph-container3"></div>
+                </div>
             </div>
-        </div>
-
-        <h2>Upcoming Olympics</h2>
-        <p>The next Olympic Games will be held in <strong>Paris, France</strong> in 2024. To find out more regarding this events. Visit the official Olympics website <a href="https://olympics.com/en/olympic-games/paris-2024" target="_blank">here</a>.</p>
-
-    </main>
-    <script type="text/javascript">
-        var specVis1 = "./Olympic_Location_Map.vg.json";
-        var specVis2 = "./Stack_barchart_tester_2.vega";
-        var specVis3 = "./Scatterplot_total_medals.vg.JSON";
-        var SpecVis4 = "./Particpations_bar_chart.vg.json";
-
-        // Embed the first Vega-Lite graph in the first container
-        vegaEmbed('#graph-container1', specVis1, { "actions": false });
-
-        // Embed the second Vega-Lite graph in the second container
-        vegaEmbed('#graph-container2', specVis2, { "actions": false });
-
-        // Embed the third Vega-Lite graph in the third container
-        vegaEmbed('#graph-container3', specVis3, { "actions": false });
-
-        // Embed the fourth Vega-Lite graph in the second container
-        vegaEmbed('#graph-container4', SpecVis4, { "actions": false });
-    </script>
-
-</body>
-</html>
+    
+            <h2>Upcoming Olympics</h2>
+            <p>The next <strong>Olympic</strong> Games will be held in <strong>Paris, France</strong> in 2024. To find out more regarding this event, visit the official <strong>Olympics</strong> website <a href="https://olympics.com/en/olympic-games/paris-2024" target="_blank">here</a>.</p>
+    
+        </main>
+        <script type="text/javascript">
+            var specVis1 = "./Olympic_Location_Map.vg.json";
+            var specVis2 = "./Stack_barchart_tester_2.vega";
+            var specVis3 = "./Scatterplot_total_medals.vg.JSON";
+            var SpecVis4 = "./Particpations_bar_chart.vg.json";
+    
+            // Embed the first Vega-Lite graph in the first container
+            vegaEmbed('#graph-container1', specVis1, { "actions": false });
+    
+            // Embed the second Vega-Lite graph in the second container
+            vegaEmbed('#graph-container2', specVis2, { "actions": false });
+    
+            // Embed the third Vega-Lite graph in the third container
+            vegaEmbed('#graph-container3', specVis3, { "actions": false });
+    
+            // Embed the fourth Vega-Lite graph in the second container
+            vegaEmbed('#graph-container4', SpecVis4, { "actions": false });
+        </script>
+    
+    </body>
+    </html>
