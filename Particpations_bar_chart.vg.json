@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Olympic Participations by Country",
+    "fontSize": 18
+  },
+  "data": {
+    "values": [
+      {"country": "United States", "participations": 28},
+      {"country": "Soviet Union", "participations": 9},
+      {"country": "Great Britain", "participations": 29},
+      {"country": "France", "participations": 29},
+      {"country": "Germany", "participations": 17},
+      {"country": "China", "participations": 11},
+      {"country": "Italy", "participations": 28},
+      {"country": "Australia", "participations": 27},
+      {"country": "Hungary", "participations": 27},
+      {"country": "Sweden", "participations": 28},
+      {"country": "Japan", "participations": 23},
+      {"country": "Russia", "participations": 6},
+      {"country": "East Germany", "participations": 5},
+      {"country": "Canada", "participations": 27},
+      {"country": "Netherlands", "participations": 27}
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"}
+  },
+  "height": 250,
+  "width": 350,
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "participations",
+      "type": "quantitative",
+      "title": "Number of Participations"
+    },
+    "x": {
+      "field": "country",
+      "type": "nominal",
+      "title": "Country",
+      "sort": "-y"
+    }
+  }
+}

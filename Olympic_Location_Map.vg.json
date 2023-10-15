@@ -1,0 +1,313 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 680,
+  "height": 400,
+  "title": {
+    "text": "Olympic Locations",
+    "fontSize": 18
+  },
+  "data": {
+    "url": "https://vega.github.io/vega-lite/data/world-110m.json",
+    "format": {
+      "type": "topojson",
+      "feature": "countries"
+    }
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {"op": "distinct", "field": "year", "as": "years"},
+        {"op": "min", "field": "year", "as": "firstYear"},
+        {"op": "max", "field": "year", "as": "lastYear"}
+      ],
+      "groupby": ["city", "latitude", "longitude", "continent", "timesHosted"]
+    },
+    {
+      "fold": ["years"]
+    },
+    {
+      "joinaggregate": [
+        {"op": "count", "field": "year", "as": "countYears"},
+        {"op": "tolist", "field": "year", "as": "yearList"}
+      ],
+      "groupby": ["city"]
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgrey",
+        "stroke": "black",
+        "strokeWidth": 0.5
+      },
+      "data": {
+        "url": "https://vega.github.io/vega-lite/data/world-110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+            {
+              "city": "Athens",
+              "year": 1896,
+              "latitude": 37.9838,
+              "longitude": 23.7275,
+              "continent": "Europe",
+              "timesHosted": 1
+            },
+            {
+              "city": "Paris",
+              "year": 1900,
+              "latitude": 48.8566,
+              "longitude": 2.3522,
+              "continent": "Europe",
+              "timesHosted": 2
+            },
+            {
+              "city": "St. Louis",
+              "year": 1904,
+              "latitude": 38.6270,
+              "longitude": -90.1994,
+              "continent": "North America",
+              "timesHosted": 1
+            },
+            {
+              "city": "London",
+              "year": 1908,
+              "latitude": 51.5074,
+              "longitude": -0.1278,
+              "continent": "Europe",
+              "timesHosted": 3
+            },
+            {
+              "city": "Stockholm",
+              "year": 1912,
+              "latitude": 59.3293,
+              "longitude": 18.0686,
+              "continent": "Europe",
+              "timesHosted": 1
+            },
+            {
+              "city": "Antwerp",
+              "year": 1920,
+              "latitude": 51.2194,
+              "longitude": 4.4025,
+              "continent": "Europe",
+              "timesHosted": 1
+            },
+            {
+              "city": "Paris",
+              "year": 1924,
+              "latitude": 48.8566,
+              "longitude": 2.3522,
+              "continent": "Europe",
+              "timesHosted": 3
+            },
+            {
+              "city": "Los Angeles",
+              "year": 1932,
+              "latitude": 34.0522,
+              "longitude": -118.2437,
+              "continent": "North America",
+              "timesHosted": 3
+            },
+            {
+              "city": "Berlin",
+              "year": 1936,
+              "latitude": 52.5200,
+              "longitude": 13.4050,
+              "continent": "Europe",
+              "timesHosted": 2
+            },
+            {
+              "city": "London",
+              "year": 1948,
+              "latitude": 51.5074,
+              "longitude": -0.1278,
+              "continent": "Europe",
+              "timesHosted": 3
+            },
+            {
+              "city": "Helsinki",
+              "year": 1952,
+              "latitude": 60.1699,
+              "longitude": 24.9384,
+              "continent": "Europe",
+              "timesHosted": 1
+            },
+            {
+              "city": "Melbourne",
+              "year": 1956,
+              "latitude": -37.8136,
+              "longitude": 144.9631,
+              "continent": "Australia",
+              "timesHosted": 2
+            },
+            {
+              "city": "Rome",
+              "year": 1960,
+              "latitude": 41.9028,
+              "longitude": 12.4964,
+              "continent": "Europe",
+              "timesHosted": 1
+            },
+            {
+              "city": "Tokyo",
+              "year": 1964,
+              "latitude": 35.682839,
+              "longitude": 139.759455,
+              "continent": "Asia",
+              "timesHosted": 3
+            },
+            {
+              "city": "Mexico City",
+              "year": 1968,
+              "latitude": 19.4326,
+              "longitude": -99.1332,
+              "continent": "North America",
+              "timesHosted": 2
+            },
+            {
+              "city": "Munich",
+              "year": 1972,
+              "latitude": 48.1351,
+              "longitude": 11.5820,
+              "continent": "Europe",
+              "timesHosted": 2
+            },
+            {
+              "city": "Montreal",
+              "year": 1976,
+              "latitude": 45.5017,
+              "longitude": -73.5673,
+              "continent": "North America",
+              "timesHosted": 1
+            },
+            {
+              "city": "Moscow",
+              "year": 1980,
+              "latitude": 55.7558,
+              "longitude": 37.6176,
+              "continent": "Europe",
+              "timesHosted": 1
+            },
+            {
+              "city": "Los Angeles",
+              "year": 1984,
+              "latitude": 34.0522,
+              "longitude": -118.2437,
+              "continent": "North America",
+              "timesHosted": 2
+            },
+            {
+              "city": "Seoul",
+              "year": 1988,
+              "latitude": 37.5665,
+              "longitude": 126.9780,
+              "continent": "Asia",
+              "timesHosted": 1
+            },
+            {
+              "city": "Barcelona",
+              "year": 1992,
+              "latitude": 41.3851,
+              "longitude": 2.1734,
+              "continent": "Europe",
+              "timesHosted": 1
+            },
+            {
+              "city": "Atlanta",
+              "year": 1996,
+              "latitude": 33.7490,
+              "longitude": -84.3880,
+              "continent": "North America",
+              "timesHosted": 1
+            },
+            {
+              "city": "Sydney",
+              "year": 2000,
+              "latitude": -33.8651,
+              "longitude": 151.2093,
+              "continent": "Australia",
+              "timesHosted": 1
+            },
+            {
+              "city": "Athens",
+              "year": 2004,
+              "latitude": 37.9838,
+              "longitude": 23.7275,
+              "continent": "Europe",
+              "timesHosted": 2
+            },
+            {
+              "city": "Beijing",
+              "year": 2008,
+              "latitude": 39.9042,
+              "longitude": 116.4074,
+              "continent": "Asia",
+              "timesHosted": 2
+            },
+            {
+              "city": "London",
+              "year": 2012,
+              "latitude": 51.5074,
+              "longitude": -0.1278,
+              "continent": "Europe",
+              "timesHosted": 3
+            },
+            {
+              "city": "Rio de Janeiro",
+              "year": 2016,
+              "latitude": -22.9068,
+              "longitude": -43.1729,
+              "continent": "South America",
+              "timesHosted": 1
+            },
+            {
+              "city": "Tokyo",
+              "year": 2020,
+              "latitude": 35.682839,
+              "longitude": 139.759455,
+              "continent": "Asia",
+              "timesHosted": 4
+            },
+            {
+              "city": "Paris",
+              "year": 2024,
+              "latitude": 48.8566,
+              "longitude": 2.3522,
+              "continent": "Europe",
+              "timesHosted": 4
+            }
+          ]
+      },
+      "mark": {
+        "type": "circle",
+        "stroke": "black"
+      },
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "color": {"field": "continent", "type": "nominal", "title": "Continent"},
+        "size": {
+          "field": "timesHosted",
+          "type": "quantitative",
+          "scale": {"range": [50, 200]},
+          "title": "Times Hosted"
+        },
+        "tooltip": [
+          {"field": "city", "type": "nominal", "title": "City"},
+          {"field": "year", "type": "quantitative", "title": "Year"}
+        ]
+      }
+    }
+  ]
+}

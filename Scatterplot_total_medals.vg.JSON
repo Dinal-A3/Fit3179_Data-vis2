@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Top Olympic Medalists",
+    "fontSize": 18
+  },
+  "width": 300, 
+  "height": 400, 
+  "data": {
+    "values": [
+      {"Name": "Michael Phelps", "Gender": "M", "Total Medals": 28, "Years": 4, "Gold Medals": 23, "Silver Medals": 3, "Bronze Medals": 2},
+      {"Name": "Larisa Latynina", "Gender": "F", "Total Medals": 18, "Years": 3, "Gold Medals": 9, "Silver Medals": 5, "Bronze Medals": 4},
+      {"Name": "Nikolai Andrianov", "Gender": "M", "Total Medals": 15, "Years": 3, "Gold Medals": 7, "Silver Medals": 5, "Bronze Medals": 3},
+      {"Name": "Boris Shakhlin", "Gender": "M", "Total Medals": 13, "Years": 3, "Gold Medals": 7, "Silver Medals": 4, "Bronze Medals": 2},
+      {"Name": "Edoardo Mangiarotti", "Gender": "M", "Total Medals": 13, "Years": 7, "Gold Medals": 6, "Silver Medals": 5, "Bronze Medals": 2},
+      {"Name": "Takashi Ono", "Gender": "M", "Total Medals": 13, "Years": 4, "Gold Medals": 5, "Silver Medals": 4, "Bronze Medals": 4},
+      {"Name": "Paavo Nurmi", "Gender": "M", "Total Medals": 12, "Years": 3, "Gold Medals": 9, "Silver Medals": 3, "Bronze Medals": 0},
+      {"Name": "Birgit Fischer", "Gender": "F", "Total Medals": 12, "Years": 7, "Gold Medals": 8, "Silver Medals": 4, "Bronze Medals": 0},
+      {"Name": "Sawao Katō", "Gender": "M", "Total Medals": 12, "Years": 2, "Gold Medals": 8, "Silver Medals": 3, "Bronze Medals": 1},
+      {"Name": "Jenny Thompson", "Gender": "F", "Total Medals": 12, "Years": 3, "Gold Medals": 8, "Silver Medals": 3, "Bronze Medals": 1},
+      {"Name": "Isabell Werth", "Gender": "F", "Total Medals": 12, "Years": 8, "Gold Medals": 7, "Silver Medals": 5, "Bronze Medals": 0},
+      {"Name": "Ryan Lochte", "Gender": "M", "Total Medals": 12, "Years": 4, "Gold Medals": 6, "Silver Medals": 3, "Bronze Medals": 3},
+      {"Name": "Dara Torres", "Gender": "F", "Total Medals": 12, "Years": 7, "Gold Medals": 4, "Silver Medals": 4, "Bronze Medals": 4},
+      {"Name": "Alexei Nemov", "Gender": "M", "Total Medals": 12, "Years": 2, "Gold Medals": 4, "Silver Medals": 2, "Bronze Medals": 6},
+      {"Name": "Natalie Coughlin", "Gender": "F", "Total Medals": 12, "Years": 4, "Gold Medals": 3, "Silver Medals": 4, "Bronze Medals": 5},
+      {"Name": "Mark Spitz", "Gender": "M", "Total Medals": 11, "Years": 3, "Gold Medals": 9, "Silver Medals": 1, "Bronze Medals": 1},
+      {"Name": "Matt Biondi", "Gender": "M", "Total Medals": 11, "Years": 3, "Gold Medals": 8, "Silver Medals": 2, "Bronze Medals": 1},
+      {"Name": "Věra Čáslavská", "Gender": "F", "Total Medals": 11, "Years": 3, "Gold Medals": 7, "Silver Medals": 4, "Bronze Medals": 0},
+      {"Name": "Viktor Chukarin", "Gender": "M", "Total Medals": 11, "Years": 2, "Gold Medals": 7, "Silver Medals": 3, "Bronze Medals": 1},
+      {"Name": "Allyson Felix", "Gender": "F", "Total Medals": 11, "Years": 5, "Gold Medals": 7, "Silver Medals": 3, "Bronze Medals": 1},
+      {"Name": "Carl Osburn", "Gender": "M", "Total Medals": 11, "Years": 4, "Gold Medals": 5, "Silver Medals": 4, "Bronze Medals": 2},
+      {"Name": "Emma McKeon", "Gender": "F", "Total Medals": 11, "Years": 2, "Gold Medals": 5, "Silver Medals": 2, "Bronze Medals": 4},
+      {"Name": "Carl Lewis", "Gender": "M", "Total Medals": 10, "Years": 4, "Gold Medals": 9, "Silver Medals": 1, "Bronze Medals": 0},
+      {"Name": "Katie Ledecky", "Gender": "F", "Total Medals": 10, "Years": 3, "Gold Medals": 7, "Silver Medals": 3, "Bronze Medals": 0},
+      {"Name": "Aladár Gerevich", "Gender": "M", "Total Medals": 10, "Years": 8, "Gold Medals": 7, "Silver Medals": 1, "Bronze Medals": 2},
+      {"Name": "Akinori Nakayama", "Gender": "M", "Total Medals": 10, "Years": 3, "Gold Medals": 6, "Silver Medals": 2, "Bronze Medals": 2},
+      {"Name": "Vitaly Scherbo", "Gender": "M", "Total Medals": 10, "Years": 2, "Gold Medals": 6, "Silver Medals": 0, "Bronze Medals": 4},
+      {"Name": "Ágnes Keleti", "Gender": "F", "Total Medals": 10, "Years": 5, "Gold Medals": 3, "Silver Medals": 2, "Bronze Medals": 0},
+      {"Name": "Gary Hall Jr.", "Gender": "M", "Total Medals": 10, "Years": 3, "Gold Medals": 5, "Silver Medals": 3, "Bronze Medals": 2},
+      {"Name": "Polina Astakhova", "Gender": "F", "Total Medals": 10, "Years": 3, "Gold Medals": 5, "Silver Medals": 2, "Bronze Medals": 3},
+      {"Name": "Allison Schmitt", "Gender": "F", "Total Medals": 10, "Years": 4, "Gold Medals": 4, "Silver Medals": 3, "Bronze Medals": 3},
+      {"Name": "Alexander Dityatin", "Gender": "M", "Total Medals": 10, "Years": 2, "Gold Medals": 3, "Silver Medals": 6, "Bronze Medals": 1},
+      {"Name": "Franziska van Almsick", "Gender": "F", "Total Medals": 10, "Years": 4, "Gold Medals": 0, "Silver Medals": 4, "Bronze Medals": 6}
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"}
+  },
+  "mark": {"type": "circle", "filled": true},
+  "encoding": {
+    "x": {"field": "Years", "type": "quantitative", "title": "Years in Olympics"},
+    "y": {"field": "Total Medals", "type": "quantitative", "title": "Total Medals"},
+    "color": {
+      "field": "Gender",
+      "type": "nominal",
+      "scale": {"range": ["red", "blue"]},
+      "title": "Gender"
+    },
+    "tooltip": [
+      {"field": "Name", "type": "nominal", "title": "Name"},
+      {"field": "Gold Medals", "type": "quantitative", "title": "Gold Medals"},
+      {"field": "Silver Medals", "type": "quantitative", "title": "Silver Medals"},
+      {"field": "Bronze Medals", "type": "quantitative", "title": "Bronze Medals"}
+    ]
+  }
+}

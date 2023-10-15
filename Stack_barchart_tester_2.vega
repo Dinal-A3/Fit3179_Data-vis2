@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "National Olympic Medals",
+    "fontSize": 18},
+  "data": {
+    "values": [
+      {"countries": "Soviet Union", "summer_silver": 319, "summer_bronze": 296, "summer_gold": 395},
+      {"countries": "United States", "summer_silver": 831, "summer_bronze": 738, "summer_gold": 1060},
+      {"countries": "Great Britain", "summer_silver": 318, "summer_bronze": 314, "summer_gold": 284},
+      {"countries": "France", "summer_silver": 251, "summer_bronze": 277, "summer_gold": 223},
+      {"countries": "Germany", "summer_silver": 207, "summer_bronze": 247, "summer_gold": 201},
+      {"countries": "China", "summer_silver": 199, "summer_bronze": 173, "summer_gold": 262},
+      {"countries": "Italy", "summer_silver": 188, "summer_bronze": 213, "summer_gold": 217},
+      {"countries": "Australia", "summer_silver": 173, "summer_bronze": 210, "summer_gold": 164},
+      {"countries": "Hungary", "summer_silver": 154, "summer_bronze": 176, "summer_gold": 181},
+      {"countries": "Sweden", "summer_silver": 176, "summer_bronze": 179, "summer_gold": 148},
+      {"countries": "Canada", "summer_silver": 109, "summer_bronze": 146, "summer_gold": 71},
+      {"countries": "Netherlands", "summer_silver": 105, "summer_bronze": 122, "summer_gold": 95},
+      {"countries": "Russia", "summer_silver": 126, "summer_bronze": 151, "summer_gold": 148},
+      {"countries": "East Germany", "summer_silver": 129, "summer_bronze": 127, "summer_gold": 153},
+      {"countries": "Japan", "summer_silver": 150, "summer_bronze": 178, "summer_gold": 169}
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"}
+  },
+  "height": 250,
+  "width": 250,
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "countries",
+      "type": "nominal",
+      "title": "Countries",
+      "sort": "-x"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "value",
+      "type": "quantitative",
+      "title": "Total medals"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "scale": {
+        "range": ["brown", "gold", "silver"]
+      },
+      "title": "Category"
+    },
+    "tooltip": [
+      {"field": "summer_silver", "type": "quantitative", "title": "Silver Medals"},
+      {"field": "summer_bronze", "type": "quantitative", "title": "Bronze Medals"},
+      {"field": "summer_gold", "type": "quantitative", "title": "Gold Medals"}
+    ]
+  },
+  "transform": [
+    {"fold": ["summer_silver", "summer_bronze", "summer_gold"], "as": ["category", "value"]}
+  ]
+}
